@@ -13,7 +13,20 @@
 		19C4CBC725C438DE00EA8238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C4CBC625C438DE00EA8238 /* Assets.xcassets */; };
 		19C4CBCA25C438DE00EA8238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C4CBC925C438DE00EA8238 /* Preview Assets.xcassets */; };
 		19C4CBCD25C438DE00EA8238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C4CBCB25C438DE00EA8238 /* LaunchScreen.storyboard */; };
+		19C4CBDC25C438F100EA8238 /* ArraysLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4CBDB25C438F100EA8238 /* ArraysLabTests.swift */; };
+		19C4CBE625C4392900EA8238 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4CBE525C4392900EA8238 /* Lab.swift */; };
+		19C4CBE925C4399200EA8238 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C4CBE525C4392900EA8238 /* Lab.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19C4CBDE25C438F100EA8238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C4CBB525C438DC00EA8238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C4CBBC25C438DC00EA8238;
+			remoteInfo = ArraysLab;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19C4CBBD25C438DC00EA8238 /* ArraysLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArraysLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		19C4CBC925C438DE00EA8238 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19C4CBCC25C438DE00EA8238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19C4CBCE25C438DE00EA8238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C4CBD925C438F100EA8238 /* ArraysLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArraysLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C4CBDB25C438F100EA8238 /* ArraysLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysLabTests.swift; sourceTree = "<group>"; };
+		19C4CBDD25C438F100EA8238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C4CBE525C4392900EA8238 /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		19C4CBBA25C438DC00EA8238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C4CBD625C438F100EA8238 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				19C4CBBF25C438DC00EA8238 /* ArraysLab */,
+				19C4CBDA25C438F100EA8238 /* ArraysLabTests */,
 				19C4CBBE25C438DC00EA8238 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				19C4CBBD25C438DC00EA8238 /* ArraysLab.app */,
+				19C4CBD925C438F100EA8238 /* ArraysLabTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +85,7 @@
 				19C4CBC025C438DC00EA8238 /* AppDelegate.swift */,
 				19C4CBC225C438DC00EA8238 /* SceneDelegate.swift */,
 				19C4CBC425C438DC00EA8238 /* ContentView.swift */,
+				19C4CBE525C4392900EA8238 /* Lab.swift */,
 				19C4CBC625C438DE00EA8238 /* Assets.xcassets */,
 				19C4CBCB25C438DE00EA8238 /* LaunchScreen.storyboard */,
 				19C4CBCE25C438DE00EA8238 /* Info.plist */,
@@ -73,6 +100,15 @@
 				19C4CBC925C438DE00EA8238 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19C4CBDA25C438F100EA8238 /* ArraysLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				19C4CBDB25C438F100EA8238 /* ArraysLabTests.swift */,
+				19C4CBDD25C438F100EA8238 /* Info.plist */,
+			);
+			path = ArraysLabTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +131,24 @@
 			productReference = 19C4CBBD25C438DC00EA8238 /* ArraysLab.app */;
 			productType = "com.apple.product-type.application";
 		};
+		19C4CBD825C438F100EA8238 /* ArraysLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C4CBE025C438F100EA8238 /* Build configuration list for PBXNativeTarget "ArraysLabTests" */;
+			buildPhases = (
+				19C4CBD525C438F100EA8238 /* Sources */,
+				19C4CBD625C438F100EA8238 /* Frameworks */,
+				19C4CBD725C438F100EA8238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19C4CBDF25C438F100EA8238 /* PBXTargetDependency */,
+			);
+			name = ArraysLabTests;
+			productName = ArraysLabTests;
+			productReference = 19C4CBD925C438F100EA8238 /* ArraysLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +160,10 @@
 				TargetAttributes = {
 					19C4CBBC25C438DC00EA8238 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					19C4CBD825C438F100EA8238 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 19C4CBBC25C438DC00EA8238;
 					};
 				};
 			};
@@ -123,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				19C4CBBC25C438DC00EA8238 /* ArraysLab */,
+				19C4CBD825C438F100EA8238 /* ArraysLabTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +197,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19C4CBD725C438F100EA8238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,10 +214,28 @@
 				19C4CBC125C438DC00EA8238 /* AppDelegate.swift in Sources */,
 				19C4CBC325C438DC00EA8238 /* SceneDelegate.swift in Sources */,
 				19C4CBC525C438DC00EA8238 /* ContentView.swift in Sources */,
+				19C4CBE625C4392900EA8238 /* Lab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C4CBD525C438F100EA8238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C4CBDC25C438F100EA8238 /* ArraysLabTests.swift in Sources */,
+				19C4CBE925C4399200EA8238 /* Lab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19C4CBDF25C438F100EA8238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C4CBBC25C438DC00EA8238 /* ArraysLab */;
+			targetProxy = 19C4CBDE25C438F100EA8238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19C4CBCB25C438DE00EA8238 /* LaunchScreen.storyboard */ = {
@@ -323,6 +407,46 @@
 			};
 			name = Release;
 		};
+		19C4CBE125C438F100EA8238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K7853APAS;
+				INFOPLIST_FILE = ArraysLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thewcl.ArraysLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArraysLab.app/ArraysLab";
+			};
+			name = Debug;
+		};
+		19C4CBE225C438F100EA8238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K7853APAS;
+				INFOPLIST_FILE = ArraysLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thewcl.ArraysLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArraysLab.app/ArraysLab";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +464,15 @@
 			buildConfigurations = (
 				19C4CBD225C438DE00EA8238 /* Debug */,
 				19C4CBD325C438DE00EA8238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C4CBE025C438F100EA8238 /* Build configuration list for PBXNativeTarget "ArraysLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C4CBE125C438F100EA8238 /* Debug */,
+				19C4CBE225C438F100EA8238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
